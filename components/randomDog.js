@@ -17,11 +17,9 @@ const RandomDog = props => {
       "Add To Wallpaper",
       "Choose which screen you would like to use this picture for",
       [
-        {
-          text: "Lock", onPress: () => _setWallpaper(TYPE.LOCK)
-        },
-        { text: "Home", onPress: () => _setWallpaper(TYPE.HOME) },
-        { text: "Both", onPress: () => _setWallpaper(TYPE.BOTH) },
+        // {text: "Lock", onPress: () => _setWallpaper(TYPE.LOCK)},
+        // { text: "Home", onPress: () => _setWallpaper(TYPE.HOME) },
+        // { text: "Both", onPress: () => _setWallpaper(TYPE.BOTH) },
         {
           text: "Cancel",
           onPress: () => console.log("Cancel Pressed"),
