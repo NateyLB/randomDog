@@ -1,0 +1,6 @@
+module Pods_randomDog_randomDogTests {
+  umbrella header "Pods-randomDog-randomDogTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
