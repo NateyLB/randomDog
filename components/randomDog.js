@@ -82,7 +82,10 @@ const RandomDog = props => {
 
 const windowWidth = Dimensions.get('window').width;
 const windowHeight = Dimensions.get('window').height;
-const imgHeight = windowHeight - 100
+var imgHeight = windowHeight -100
+console.log(windowHeight,"height");
+console.log(windowWidth, "width");
+console.log(imgHeight,"img")
 
 //data from reducer
 const mapStateToProps = state => {
@@ -100,12 +103,12 @@ const styles = StyleSheet.create({
   backgroundVideo: {
     width: windowWidth,
     height: imgHeight,
-    marginTop: 33
+    marginTop: Platform.OS=='ios'? windowHeight-863: 0
   },
   clickFor: {
     fontWeight: 'bold',
     fontSize: 30,
-    marginTop: windowHeight-600,
+    marginTop: windowHeight-500,
     marginBottom: windowHeight-500
   },
   dogCard: {
@@ -116,6 +119,6 @@ const styles = StyleSheet.create({
   dogImg: {
     width: windowWidth,
     height: imgHeight,
-    marginTop: 33
+    marginTop: Platform.OS=='ios'? windowHeight-863: 0
   },
 });
