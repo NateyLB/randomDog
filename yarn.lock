@@ -5411,9 +5411,6 @@ react-is@^16.12.0, react-is@^16.7.0, react-is@^16.8.1, react-is@^16.8.4, react-i
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
-react-native-react-native-modules@/Users/Nate/Dev/DependencyPrograms/NPMmodules/react-native-native-modules:
-  version "1.0.0"
-
 react-native-video@^4.4.5:
   version "4.4.5"
   resolved "https://registry.yarnpkg.com/react-native-video/-/react-native-video-4.4.5.tgz#d0db799293f8622c7894dd0f8875cb41bfafbde8"
@@ -5422,11 +5419,6 @@ react-native-video@^4.4.5:
     keymirror "^0.1.1"
     prop-types "^15.5.10"
     shaka-player "^2.4.4"
-
-react-native-wallpaper-manager@^0.3.16:
-  version "0.3.16"
-  resolved "https://registry.yarnpkg.com/react-native-wallpaper-manager/-/react-native-wallpaper-manager-0.3.16.tgz#b6985b03c6df2efbcc2071db5977ab6eb932b596"
-  integrity sha1-tphbA8bfLvvMIHHbWXerbrkytZY=
 
 react-native@0.62.2:
   version "0.62.2"

@@ -2,12 +2,12 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 import Video from 'react-native-video';
-import ManageWallpaper, { TYPE } from 'react-native-manage-wallpaper';
+//import ManageWallpaper, { TYPE } from 'react-native-manage-wallpaper';
 
 
 import { fetchDog } from '../actions/dogAction.js'
 
-import { Alert, View, Text, Button, Image, StyleSheet, TouchableOpacity, Dimensions } from 'react-native';
+import { Alert, View, Text, Button, Image, StyleSheet, TouchableOpacity, Dimensions, Platform } from 'react-native';
 
 
 const RandomDog = props => {
@@ -17,16 +17,16 @@ const RandomDog = props => {
       "Add To Wallpaper",
       "Choose which screen you would like to use this picture for",
       [
-        // {text: "Lock", onPress: () => _setWallpaper(TYPE.LOCK)},
-        // { text: "Home", onPress: () => _setWallpaper(TYPE.HOME) },
-        // { text: "Both", onPress: () => _setWallpaper(TYPE.BOTH) },
-        {
+        {text: "Lock", onPress: () => _setWallpaper(TYPE.LOCK)},
+        { text: "Home", onPress: () => _setWallpaper(TYPE.HOME) },
+        { text: "Both", onPress: () => _setWallpaper(TYPE.BOTH) },
+        Platform.OS=='ios'?{
           text: "Cancel",
           onPress: () => console.log("Cancel Pressed"),
           style: "cancel"
-        }
+        }:<></>
       ],
-      { cancelable: false }
+      { cancelable: true }
     );
 
   //checks if media type is image or video
@@ -105,8 +105,8 @@ const styles = StyleSheet.create({
   clickFor: {
     fontWeight: 'bold',
     fontSize: 30,
-    marginTop: 400,
-    marginBottom: 347
+    marginTop: windowHeight-600,
+    marginBottom: windowHeight-500
   },
   dogCard: {
     flexDirection: 'column',

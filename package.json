@@ -14,9 +14,7 @@
     "react": "16.11.0",
     "react-native": "0.62.2",
     "react-native-manage-wallpaper": "^1.1.2",
-    "react-native-react-native-modules": "/Users/Nate/Dev/DependencyPrograms/NPMmodules/react-native-native-modules",
     "react-native-video": "^4.4.5",
-    "react-native-wallpaper-manager": "^0.3.16",
     "react-redux": "^7.2.0",
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0"
